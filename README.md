@@ -26,8 +26,8 @@ Password: prince
 ## **Installation & Setup**
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/expense-tracker.git
-cd expense-tracker
+git clone https://github.com/Prince200510/Expense-Tracker.git
+cd Expense-Tracker
 ```
 
 ### **2. Install Dependencies**
