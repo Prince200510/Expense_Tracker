@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.29bd5ccb.css",
+    "main.js": "/static/js/main.cc7bcefc.js",
+    "static/js/239.3d1e3dcf.chunk.js": "/static/js/239.3d1e3dcf.chunk.js",
+    "static/js/213.d433dc2c.chunk.js": "/static/js/213.d433dc2c.chunk.js",
+    "static/js/732.104cae33.chunk.js": "/static/js/732.104cae33.chunk.js",
+    "static/js/453.c656d1f0.chunk.js": "/static/js/453.c656d1f0.chunk.js",
+    "static/media/img123.jpg": "/static/media/img123.e4cb8fccec29fe86cee6.jpg",
+    "static/media/gpay.jpg": "/static/media/gpay.df8601d255d435c425bb.jpg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.29bd5ccb.css.map": "/static/css/main.29bd5ccb.css.map",
+    "main.cc7bcefc.js.map": "/static/js/main.cc7bcefc.js.map",
+    "239.3d1e3dcf.chunk.js.map": "/static/js/239.3d1e3dcf.chunk.js.map",
+    "213.d433dc2c.chunk.js.map": "/static/js/213.d433dc2c.chunk.js.map",
+    "732.104cae33.chunk.js.map": "/static/js/732.104cae33.chunk.js.map",
+    "453.c656d1f0.chunk.js.map": "/static/js/453.c656d1f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29bd5ccb.css",
+    "static/js/main.cc7bcefc.js"
+  ]
+}
