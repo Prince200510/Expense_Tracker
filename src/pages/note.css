@@ -1,0 +1,20 @@
+.keep-note{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.note .keep-data-note p,
+.note .keep-data-note h3{
+    margin: 0;
+    padding: 0;
+}
+.savenote{
+    overflow-y: scroll;
+    height: 320px; 
+}
+.savenote::-webkit-scrollbar{
+    background-color: red;
+    width: 5px;
+    border-radius: 5px;
+    margin-left: 20px;
+}

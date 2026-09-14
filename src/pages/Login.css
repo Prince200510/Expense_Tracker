@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../Login-credential/img123.jpg');
+}
+.parent-login{
+    padding: 20px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+.parent-login h2{
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+.parent-login input{
+    padding: 10px 45px 10px 20px;
+    border-radius: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+}
+.parent-login input::placeholder{
+    color: #fff;
+}
+.parent-login h1{
+    color: #fff;
+    margin: 0px;
+    position: absolute;
+    top: 120px;
+    font-size: 28px;
+    right: 30px;
+}
+.password-icons{
+    color: #fff;
+    margin: 0px;
+    position: absolute;
+    top: 180px;
+    font-size: 28px;
+    right: 30px;
+}
+.parent-login button{
+    width: 100%;
+    padding: 10px;
+    color: black;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.parent-login p{
+    margin: 5px;
+    color: #fff;
+}
+@media (max-width: 780px) {
+    *{
+      overflow-x: hidden;
+    }
+    .parent-login h1{
+        top: 125px;
+    }
+    .password-icons{
+        top: 201px;
+    }
+}

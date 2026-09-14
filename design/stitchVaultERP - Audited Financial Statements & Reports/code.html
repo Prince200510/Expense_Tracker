@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed":"#131b2e","primary-fixed":"#dae2fd","surface-variant":"#d3e4fe","inverse-primary":"#bec6e0","tertiary-container":"#002114","outline":"#76777d","primary":"#000000","on-error":"#ffffff","tertiary-fixed-dim":"#68dba9","surface-container-highest":"#d3e4fe","secondary-container":"#316bf3","on-tertiary-container":"#069669","tertiary":"#000000","on-primary":"#ffffff","on-secondary-fixed-variant":"#003ea8","outline-variant":"#c6c6cd","surface-tint":"#565e74","primary-fixed-dim":"#bec6e0","tertiary-fixed":"#85f8c4","surface-container-low":"#eff4ff","on-secondary-fixed":"#00174b","surface":"#f8f9ff","on-tertiary-fixed":"#002114","on-primary-container":"#7c839b","primary-container":"#131b2e","on-tertiary":"#ffffff","on-primary-fixed-variant":"#3f465c","inverse-surface":"#213145","on-error-container":"#93000a","on-background":"#0b1c30","secondary-fixed":"#dbe1ff","secondary":"#0051d5","on-surface":"#0b1c30","inverse-on-surface":"#eaf1ff","surface-container-high":"#dce9ff","on-surface-variant":"#45464d","background":"#f8f9ff","on-secondary-container":"#fefcff","surface-container-lowest":"#ffffff","surface-dim":"#cbdbf5","error-container":"#ffdad6","surface-container":"#e5eeff","on-secondary":"#ffffff","surface-bright":"#f8f9ff","error":"#ba1a1a","secondary-fixed-dim":"#b4c5ff","on-tertiary-fixed-variant":"#005137"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"1.5rem","gutter-dense":"0.5rem","space-xs":"0.25rem","space-sm":"0.5rem","space-lg":"1rem","space-xl":"1.5rem","gutter":"1rem","space-md":"0.75rem"},"fontFamily":{"body-sm":["Inter"],"label-caps":["Inter"],"headline-lg-mobile":["Inter"],"headline-lg":["Inter"],"body-md":["Inter"],"headline-xl":["Inter"],"label-sm":["JetBrains Mono"],"body-lg":["Inter"],"headline-md":["Inter"],"numeric-metric":["Inter"],"numeric-table":["JetBrains Mono"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-lg-mobile":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-xl":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"500"}],"body-lg":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"numeric-metric":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"numeric-table":["12px",{"lineHeight":"16px","fontWeight":"500"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-60 bg-surface-container-lowest border-r border-outline-variant/40 z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-14 px-margin border-b border-outline-variant/30 flex items-center gap-space-sm"><img alt="VaultERP Brand Mark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vj0wj_zTnd25x_BQ22YOwsWYRMPvN16kIhkezk4eWD3MuRSlfYv3484J-kcxAK_E05rSCyud4GAYm_Pqz1ni_3cZr9y7K4MzG_oZHSHgnOWrXb4FTR0DhEryoaR40BiR2ZqwOSa_jCeim-iHoRDMbzV4kPOXdsC9fZV3W9LhljnI5ukpaauI8riryvta24eXPsWqes6IsBvbRKPBKGP8M88498xfdGBzjGC_TaTIYj3ptGB1giu9Hmy-1K"/><div class="flex flex-col min-w-0"><span class="font-headline-md text-headline-md text-on-surface tracking-tight truncate leading-tight">VaultERP</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Personal Wealth OS</span></div></div><div class="px-space-md py-space-sm"><span class="px-space-sm py-space-xs font-label-caps text-label-caps text-outline uppercase tracking-wider block">FINANCIAL CORE</span><nav class="mt-space-xs space-y-0.5" data-active-classes="bg-primary text-on-primary font-medium rounded-lg shadow-sm"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="transactions" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">receipt_long</span><span class="font-body-md text-body-md">Transactions</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 bg-surface-container-high text-on-surface rounded font-numeric-table">1,284</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="budgets" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">pie_chart</span><span class="font-body-md text-body-md">Budgets</span></div><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="analytics" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="font-body-md text-body-md">Analytics</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-xs transition-colors bg-primary text-on-primary font-medium rounded-lg shadow-sm" data-path="reports" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">description</span><span class="font-body-md text-body-md">Reports</span></div></a></nav></div><div class="px-space-md py-space-sm border-t border-outline-variant/20"><span class="px-space-sm py-space-xs font-label-caps text-label-caps text-outline uppercase tracking-wider block">MANAGEMENT</span><nav class="mt-space-xs space-y-0.5" data-active-classes="bg-primary text-on-primary font-medium rounded-lg shadow-sm"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="accounts" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">account_balance</span><span class="font-body-md text-body-md">Accounts</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="goals" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">ads_click</span><span class="font-body-md text-body-md">Goals</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="categories-rules" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">category</span><span class="font-body-md text-body-md">Categories &amp; Rules</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">settings</span><span class="font-body-md text-body-md">Settings</span></div></a></nav></div></div><div class="p-space-md border-t border-outline-variant/30 bg-surface-container-low/40"><div class="p-space-sm bg-surface-container-lowest border border-outline-variant/40 rounded-lg flex flex-col gap-1"><div class="flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface font-semibold">Tier 1 Executive</span><span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span></div><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Live (Open Banking API)</span></div></div></div></aside><div class="pl-60 flex flex-col min-h-screen"><header class="fixed top-0 left-60 right-0 h-14 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/40 z-40 flex items-center justify-between px-margin gap-gutter"><div class="flex items-center flex-1 max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-8 pl-8 pr-16 bg-surface border border-outline-variant/50 rounded text-on-surface placeholder:text-outline text-body-md font-body-md focus:outline-none focus:border-secondary transition-colors" placeholder="Search transactions, ledgers, merchants..." type="text"/><kbd class="absolute right-2 top-1/2 -translate-y-1/2 px-1.5 py-0.5 bg-surface-container text-on-surface-variant rounded text-[10px] font-numeric-table border border-outline-variant/40 pointer-events-none">Cmd+K</kbd></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1 px-2.5 h-8 bg-surface border border-outline-variant/50 rounded text-on-surface font-body-md cursor-pointer hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-[16px] text-outline">calendar_today</span><span class="font-body-sm text-body-sm font-medium">FY 2024-25 Q3</span><span class="material-symbols-outlined text-[16px] text-outline">expand_more</span></div><button class="relative p-1.5 text-on-surface-variant hover:text-on-surface rounded hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 bg-error text-on-error rounded-full text-[9px] font-numeric-table font-semibold flex items-center justify-center">3</span></button><button class="h-8 px-3 bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary rounded flex items-center gap-1.5 text-body-md font-body-md font-medium shadow-sm transition-colors"><span class="material-symbols-outlined text-[16px]">add</span><span>Quick Add</span><kbd class="px-1 py-0.2 bg-secondary-container/40 text-on-secondary rounded text-[10px] font-numeric-table">N</kbd></button><div class="h-6 w-px bg-outline-variant/40 mx-1"></div><div class="flex items-center gap-2.5 cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr1Ib2yhK81Mh3ZikKARIC5-A7sgZAeTc9_amOgZRVAZul1ASdrRrh4I6i4qNgnhm0oj9CpKUc7ehrfyqbIxKr53g2RhyYJn6UpU2Jm7wEo9iG7AHaIcMrg_5syF02vB6HrnMtFJQ_h3kx3fu6AYHdUraJj0AnNRPsvAYNMG-_KliDwr-J6SINr0v-xUIex2zrMGJQWp14g0kzoke2v8KuUoBFPUFxPKtVVSJocrQlW-PcWj6s2GOIBQ"/><div class="flex flex-col text-left leading-none"><span class="font-body-md text-body-md font-semibold text-on-surface truncate">Arjun Mehta</span><span class="font-numeric-table text-label-sm text-outline mt-0.5">Net Worth: ₹1.42 Cr</span></div></div></div></header><main class="w-full pt-14 flex-1 bg-surface"><div class="flex flex-col w-full">
+<div class="p-margin space-y-space-lg max-w-[1600px] mx-auto w-full">
+<!-- ERP Statement Management Control Header -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-lg text-headline-lg text-on-surface">Financial Statements &amp; Audited Ledger Reports</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container animate-ping"></span>
+            Statutory Audit Grade
+          </span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm flex-wrap">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">badge</span>
+            Scope: <strong class="text-on-surface font-medium">Arjun Mehta</strong>
+</span>
+<span class="text-outline">/</span>
+<span class="font-numeric-table text-label-sm bg-surface-container px-1.5 py-0.5 rounded text-on-surface">PAN: AXXXX1234Z</span>
+<span class="text-outline">/</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">domain</span>
+            Entity: Personal Fiduciary Core
+          </span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="h-8 px-3 bg-surface-container hover:bg-surface-container-high text-on-surface rounded flex items-center gap-1.5 font-body-md text-body-md transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">history</span>
+<span>Audit Trail</span>
+</button>
+<button class="h-8 px-3 bg-surface-container hover:bg-surface-container-high text-on-surface rounded flex items-center gap-1.5 font-body-md text-body-md transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">event_repeat</span>
+<span>Schedule Automated Statement</span>
+</button>
+<button class="h-8 px-3.5 bg-primary hover:bg-primary-container text-on-primary rounded flex items-center gap-1.5 font-body-md text-body-md shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">archive</span>
+<span>Batch Export (ZIP)</span>
+</button>
+</div>
+</div>
+<!-- Ledger Category Tabs Strip -->
+<div class="overflow-x-auto pb-1">
+<div class="flex items-center gap-2 min-w-max bg-surface-container-lowest p-1.5 rounded-lg shadow-sm">
+<button class="px-3.5 py-2 rounded-lg bg-primary text-on-primary font-body-md text-body-md font-medium flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[17px]">receipt_long</span>
+<span>Monthly Financial Statement</span>
+<span class="px-1.5 py-0.2 bg-on-primary/20 text-on-primary rounded font-label-sm text-label-sm">Live</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-md text-body-md transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-outline">account_balance_wallet</span>
+<span>Cash Flow &amp; Liquidity Report</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-md text-body-md transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-outline">checklist_rtl</span>
+<span>Comprehensive Expense Audit</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-md text-body-md transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-outline">query_stats</span>
+<span>Category Variance Report</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-md text-body-md transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-outline">calculate</span>
+<span>Annual Tax &amp; Capital Gains (FY 2024-25)</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-md text-body-md transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-outline">balance</span>
+<span>Balance Sheet &amp; Net Worth</span>
+</button>
+</div>
+</div>
+<!-- Main Workspace Split Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Statement Render Workspace Document Canvas (Left 8 Cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<!-- Document Action Micro-Bar -->
+<div class="flex items-center justify-between px-space-md py-2 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+              Cryptographically Certified PDF Preview
+            </span>
+<span class="text-outline-variant">|</span>
+<span class="font-numeric-table text-label-sm">Checksum: 8fa7..c309</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-1 rounded hover:bg-surface-container-high transition-colors" title="Zoom in">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high transition-colors" title="Zoom out">
+<span class="material-symbols-outlined text-[18px]">zoom_out</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high transition-colors" title="Print document">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high transition-colors" title="Fullscreen view">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</button>
+</div>
+</div>
+<!-- Rendered Physical Ledger Sheet -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-6 sm:p-10 space-y-8 relative overflow-hidden">
+<!-- Watermark Ledger Accent -->
+<div class="absolute right-6 top-8 opacity-5 select-none pointer-events-none text-right">
+<div class="font-label-sm text-[72px] font-bold leading-none tracking-tighter text-on-surface">VAULT-ERP</div>
+<div class="font-label-sm text-[16px] uppercase tracking-widest text-on-surface">OFFICIAL AUDIT REPORT</div>
+</div>
+<!-- Document Top Meta Section -->
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-6 pb-6 border-b-2 border-surface-container-high">
+<div class="space-y-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-caps text-label-caps">FORM 16A-EQUIV</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-numeric-table">REF: VLT-2024-10-M892</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface">VaultERP Consolidated Personal Statement</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Accounting Period: 01 October 2024 to 31 October 2024</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg text-right sm:min-w-[210px] space-y-1">
+<div class="font-label-caps text-label-caps text-outline uppercase">Generated On</div>
+<div class="font-numeric-table text-body-md font-semibold text-on-surface">24 Oct 2024, 18:42:10 IST</div>
+<div class="font-label-sm text-label-sm text-secondary">Verified by Vault Ledger Engine v4.8</div>
+<div class="pt-1 text-on-surface-variant font-numeric-table text-[11px]">Reporting Currency: INR (₹)</div>
+</div>
+</div>
+<!-- High-Level Financial Pulse Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div class="p-4 bg-surface-container-low rounded-lg">
+<div class="font-label-caps text-label-caps text-outline uppercase">Total Inflows (A)</div>
+<div class="font-numeric-metric text-numeric-metric text-on-surface mt-1">₹4,85,000</div>
+<div class="flex items-center gap-1 mt-1 text-on-tertiary-container font-label-sm text-label-sm font-numeric-table">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+<span>+8.4% vs Sep 2024</span>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low rounded-lg">
+<div class="font-label-caps text-label-caps text-outline uppercase">Operating Outflows (B)</div>
+<div class="font-numeric-metric text-numeric-metric text-error mt-1">₹1,64,280</div>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant font-label-sm text-label-sm font-numeric-table">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>33.9% burn of gross inflow</span>
+</div>
+</div>
+<div class="p-4 bg-secondary-container/10 rounded-lg">
+<div class="font-label-caps text-label-caps text-secondary uppercase font-semibold">Net Capital Surplus (C)</div>
+<div class="font-numeric-metric text-numeric-metric text-secondary mt-1">₹3,20,720</div>
+<div class="flex items-center gap-1 mt-1 text-on-tertiary-container font-label-sm text-label-sm font-numeric-table">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>66.1% capital savings conversion</span>
+</div>
+</div>
+</div>
+<!-- Section A: Gross Receipts & Inflows Table -->
+<div class="space-y-3">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded bg-primary text-on-primary font-numeric-table text-label-sm flex items-center justify-center font-bold">A</span>
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-wide">Gross Receipts &amp; Institutional Inflows</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase">3 Verified Inflow Stream Items</span>
+</div>
+<div class="overflow-hidden rounded-lg bg-surface-container-lowest">
+<table class="w-full text-left">
+<thead class="bg-surface-container-low text-outline font-label-caps text-label-caps uppercase">
+<tr>
+<th class="py-2.5 px-4">Line Item / Source Origin</th>
+<th class="py-2.5 px-4">Category Code</th>
+<th class="py-2.5 px-4">Tax Head</th>
+<th class="py-2.5 px-4 text-right">Amount (₹)</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface">
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-2.5 px-4 font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                      Primary Professional Salary (TCS Executive Payroll)
+                    </td>
+<td class="py-2.5 px-4 font-numeric-table text-body-sm text-on-surface-variant">INC-SAL-001</td>
+<td class="py-2.5 px-4 font-body-sm text-on-surface-variant">Salaries (Sec 17)</td>
+<td class="py-2.5 px-4 text-right font-numeric-table font-semibold">₹3,85,000.00</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors">
+<td class="py-2.5 px-4 font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                      Retainer Advisory Consulting (Fintech Systems)
+                    </td>
+<td class="py-2.5 px-4 font-numeric-table text-body-sm text-on-surface-variant">INC-ADV-014</td>
+<td class="py-2.5 px-4 font-body-sm text-on-surface-variant">Profits &amp; Gains (44ADA)</td>
+<td class="py-2.5 px-4 text-right font-numeric-table font-semibold">₹75,000.00</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-2.5 px-4 font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                      Dividend &amp; Debt Mutual Fund Yields (Quarterly Distribution)
+                    </td>
+<td class="py-2.5 px-4 font-numeric-table text-body-sm text-on-surface-variant">INC-DIV-008</td>
+<td class="py-2.5 px-4 font-body-sm text-on-surface-variant">Other Sources (Sec 56)</td>
+<td class="py-2.5 px-4 text-right font-numeric-table font-semibold">₹25,000.00</td>
+</tr>
+<tr class="bg-surface-container-low font-semibold text-on-surface">
+<td class="py-2.5 px-4 text-right uppercase font-label-caps text-label-caps tracking-wider" colspan="3">Subtotal: Total Gross Inflows (A)</td>
+<td class="py-2.5 px-4 text-right font-numeric-table text-headline-md text-on-surface">₹4,85,000.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Section B: Operating Outflows & Living Expenditures Table -->
+<div class="space-y-3">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded bg-outline text-on-primary font-numeric-table text-label-sm flex items-center justify-center font-bold">B</span>
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-wide">Operating Outflows &amp; Living Expenditures</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase">7 Monitored Budget Ledgers</span>
+</div>
+<div class="overflow-hidden rounded-lg bg-surface-container-lowest">
+<table class="w-full text-left">
+<thead class="bg-surface-container-low text-outline font-label-caps text-label-caps uppercase">
+<tr>
+<th class="py-2.5 px-4">Cost Center Description</th>
+<th class="py-2.5 px-4">Ledger ID</th>
+<th class="py-2.5 px-4">Budget Ratio</th>
+<th class="py-2.5 px-4 text-right">Debit Amount (₹)</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface">
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-2 px-4 font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">home</span>
+                      Housing, Mortgage &amp; Society Maintenance
+                    </td>
+<td class="py-2 px-4 font-numeric-table text-body-sm text-on-surface-variant">EXP-RES-01</td>
+<td class="py-2 px-4 text-body-sm font-numeric-table text-on-surface-variant">11.9% of inflow</td>
+<td class="py-2 px-4 text-right font-numeric-table font-semibold">₹58,000.00</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-2 px-4 font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">restaurant</span>
+                      Culinary, Food &amp; Groceries (Instamart, Nature's Basket)
+                    </td>
+<td class="py-2 px-4 font-numeric-table text-body-sm text-on-surface-variant">EXP-CUL-02</td>
+<td class="py-2 px-4 text-body-sm font-numeric-table text-on-surface-variant">7.2% of inflow</td>
+<td class="py-2 px-4 text-right font-numeric-table font-semibold">₹34,800.00</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-2 px-4 font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">directions_car</span>
+                      Transportation &amp; Automobile (Fuel, Tolls, Uber)
+                    </td>
+<td class="py-2 px-4 font-numeric-table text-body-sm text-on-surface-variant">EXP-TRN-05</td>
+<td class="py-2 px-4 text-body-sm font-numeric-table text-on-surface-variant">2.9% of inflow</td>
+<td class="py-2 px-4 text-right font-numeric-table font-semibold">₹14,200.00</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-2 px-4 font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">shopping_bag</span>
+                      Retail, Shopping &amp; Household Capital Goods
+                    </td>
+<td class="py-2 px-4 font-numeric-table text-body-sm text-on-surface-variant">EXP-RET-09</td>
+<td class="py-2 px-4 text-body-sm font-numeric-table text-on-surface-variant">4.6% of inflow</td>
+<td class="py-2 px-4 text-right font-numeric-table font-semibold">₹22,100.00</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-2 px-4 font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">health_and_safety</span>
+                      Healthcare, Insurance Premiums (HDFC ERGO)
+                    </td>
+<td class="py-2 px-4 font-numeric-table text-body-sm text-on-surface-variant">EXP-HLT-04</td>
+<td class="py-2 px-4 text-body-sm font-numeric-table text-on-surface-variant">1.4% of inflow</td>
+<td class="py-2 px-4 text-right font-numeric-table font-semibold">₹7,000.00</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-2 px-4 font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">wifi</span>
+                      Subscriptions &amp; Telecommunications (Airtel, AWS, SaaS)
+                    </td>
+<td class="py-2 px-4 font-numeric-table text-body-sm text-on-surface-variant">EXP-SUB-08</td>
+<td class="py-2 px-4 text-body-sm font-numeric-table text-on-surface-variant">1.2% of inflow</td>
+<td class="py-2 px-4 text-right font-numeric-table font-semibold">₹5,880.00</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-2 px-4 font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">sports_esports</span>
+                      Recreation, Dining &amp; Discretionary Leisure
+                    </td>
+<td class="py-2 px-4 font-numeric-table text-body-sm text-on-surface-variant">EXP-REC-07</td>
+<td class="py-2 px-4 text-body-sm font-numeric-table text-on-surface-variant">4.6% of inflow</td>
+<td class="py-2 px-4 text-right font-numeric-table font-semibold">₹22,300.00</td>
+</tr>
+<tr class="bg-surface-container-low font-semibold text-on-surface">
+<td class="py-2.5 px-4 text-right uppercase font-label-caps text-label-caps tracking-wider" colspan="3">Subtotal: Total Operating Outflows (B)</td>
+<td class="py-2.5 px-4 text-right font-numeric-table text-headline-md text-error">₹1,64,280.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Section C: Net Capital Surplus & Systematic Deployment -->
+<div class="space-y-3">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded bg-on-tertiary-container text-on-primary font-numeric-table text-label-sm flex items-center justify-center font-bold">C</span>
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-wide">Net Capital Surplus &amp; Systematic Deployment</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">Deployment Rate: 93.5%</span>
+</div>
+<div class="p-4 bg-surface-container rounded-lg space-y-3">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 bg-surface-container-lowest rounded-lg">
+<div>
+<div class="font-body-md text-body-md font-semibold text-on-surface">Operating Ledger Surplus (A - B)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Net unencumbered capital generated during October cycle</div>
+</div>
+<div class="text-right font-numeric-metric text-numeric-metric text-secondary font-semibold">₹3,20,720.00</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<div class="p-3 bg-surface-container-lowest rounded-lg space-y-1">
+<div class="flex items-center justify-between font-label-caps text-label-caps text-outline uppercase">
+<span>SIP Allocation</span>
+<span class="text-on-tertiary-container">Executed</span>
+</div>
+<div class="font-numeric-table text-headline-md font-semibold text-on-surface">₹2,00,000.00</div>
+<div class="text-on-surface-variant font-body-sm text-[11px]">Nifty 50 Index &amp; Flexi-Cap Funds</div>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-lg space-y-1">
+<div class="flex items-center justify-between font-label-caps text-label-caps text-outline uppercase">
+<span>Emergency Sweeps</span>
+<span class="text-on-tertiary-container">Parked</span>
+</div>
+<div class="font-numeric-table text-headline-md font-semibold text-on-surface">₹1,00,000.00</div>
+<div class="text-on-surface-variant font-body-sm text-[11px]">Arbitrage Fund / Overnight Liquid</div>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-lg space-y-1">
+<div class="flex items-center justify-between font-label-caps text-label-caps text-outline uppercase">
+<span>Unallocated Buffer</span>
+<span class="text-secondary">Checking</span>
+</div>
+<div class="font-numeric-table text-headline-md font-semibold text-on-surface">₹20,720.00</div>
+<div class="text-on-surface-variant font-body-sm text-[11px]">Residual in HDFC Priority Account</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Document Attestation & Digital Footprint -->
+<div class="pt-6 border-t-2 border-surface-container-high flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-on-surface-variant font-body-sm text-body-sm">
+<div class="space-y-1">
+<div class="font-label-caps text-label-caps text-outline uppercase">Statutory Disclaimer &amp; Integrity Notice</div>
+<p class="text-[11px] leading-relaxed max-w-xl text-outline">
+                Compiled via automated Open Banking Aggregator API under RBI Account Aggregator framework. All figures are verified against institutional clearing house data feeds. VaultERP carries zero unverified reconciliation logs for this billing cycle.
+              </p>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-low p-2 rounded-lg shrink-0">
+<div class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">fingerprint</span>
+</div>
+<div class="text-left leading-tight">
+<div class="font-label-caps text-label-caps text-on-surface uppercase">Digital Key ID</div>
+<div class="font-numeric-table text-[10px] text-outline">SHA256: 9e3a..81df</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Export & Compliance Sidebar Control Panel (Right 4 Cols) -->
+<div class="xl:col-span-4 space-y-space-lg">
+<!-- Output Config & Compliance Settings -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-on-surface">Export &amp; Dispatch</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-outline font-label-sm text-label-sm">ERP v4.8</span>
+</div>
+<!-- Format Chooser Segmented Pill -->
+<div class="space-y-1.5">
+<label class="font-label-caps text-label-caps text-outline uppercase">Select Export Schema Format</label>
+<div class="grid grid-cols-3 gap-1 bg-surface-container p-1 rounded-lg">
+<button class="py-1.5 px-2 rounded-md bg-surface-container-lowest font-body-sm text-body-sm font-semibold text-on-surface shadow-sm text-center">PDF Audit</button>
+<button class="py-1.5 px-2 rounded-md text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm text-center">Excel (XLSX)</button>
+<button class="py-1.5 px-2 rounded-md text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm text-center">Raw (CSV)</button>
+</div>
+</div>
+<!-- Compliance Toggles Checklist -->
+<div class="space-y-2.5 pt-1">
+<label class="font-label-caps text-label-caps text-outline uppercase block">Ledger Verification Options</label>
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2.5">
+<input checked="" class="accent-secondary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Include Merchant GST Invoices</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-numeric-table">18 Attachments</span>
+</label>
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2.5">
+<input checked="" class="accent-secondary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Mask Account &amp; Card Numbers</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container">security</span>
+</label>
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2.5">
+<input checked="" class="accent-secondary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Sign with Vault Digital PKI</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+</label>
+</div>
+<!-- Primary CTAs -->
+<div class="space-y-2 pt-2">
+<button class="w-full h-10 px-4 bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary rounded flex items-center justify-center gap-2 font-body-md text-body-md font-semibold shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Formal Statement (PDF)</span>
+</button>
+<button class="w-full h-9 px-4 bg-surface-container hover:bg-surface-container-high text-on-surface rounded flex items-center justify-center gap-2 font-body-md text-body-md font-medium transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">send</span>
+<span>Email to Tax Accountant (CA)</span>
+</button>
+</div>
+<!-- Certified Recipient Note -->
+<div class="p-3 bg-surface-container rounded-lg flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">mark_email_read</span>
+<div class="space-y-0.5 leading-tight">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block">Designated CA: Rajesh Kapadia &amp; Co.</span>
+<span class="font-numeric-table text-label-sm text-outline truncate block">rajesh@kapadiatax.in (Pre-authorized)</span>
+</div>
+</div>
+</div>
+<!-- Statement Archive & Generation History -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-on-surface">Audit Statement Archive</span>
+<span class="font-label-sm text-label-sm text-outline font-numeric-table">3 Past Periods</span>
+</div>
+<div class="space-y-2">
+<!-- September 2024 -->
+<div class="p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<div class="font-body-md text-body-md font-semibold text-on-surface truncate">September 2024 Statement</div>
+<div class="font-numeric-table text-label-sm text-outline flex items-center gap-2">
+<span>2.4 MB</span>
+<span>•</span>
+<span>Ref: VLT-2024-09-K311</span>
+</div>
+</div>
+</div>
+<button class="h-7 w-7 rounded flex items-center justify-center hover:bg-surface-container-highest text-on-surface-variant transition-colors" title="Download Sep 2024">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<!-- August 2024 -->
+<div class="p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<div class="font-body-md text-body-md font-semibold text-on-surface truncate">August 2024 Statement</div>
+<div class="font-numeric-table text-label-sm text-outline flex items-center gap-2">
+<span>2.1 MB</span>
+<span>•</span>
+<span>Ref: VLT-2024-08-H092</span>
+</div>
+</div>
+</div>
+<button class="h-7 w-7 rounded flex items-center justify-center hover:bg-surface-container-highest text-on-surface-variant transition-colors" title="Download Aug 2024">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<!-- July 2024 -->
+<div class="p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<div class="font-body-md text-body-md font-semibold text-on-surface truncate">July 2024 Statement</div>
+<div class="font-numeric-table text-label-sm text-outline flex items-center gap-2">
+<span>2.8 MB</span>
+<span>•</span>
+<span>Ref: VLT-2024-07-G440</span>
+</div>
+</div>
+</div>
+<button class="h-7 w-7 rounded flex items-center justify-center hover:bg-surface-container-highest text-on-surface-variant transition-colors" title="Download Jul 2024">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<button class="w-full py-2 text-center text-secondary hover:text-on-secondary-fixed-variant font-body-sm text-body-sm font-medium transition-colors">
+            Access Historical 5-Year Deep Archives →
+          </button>
+</div>
+<!-- Security & Audit Telemetry Status -->
+<div class="p-space-md bg-surface-container-low rounded-xl space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase">Fiduciary Guard Status</span>
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+</div>
+<p class="text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+            All records stored on write-once-read-many (WORM) compliant encrypted storage nodes under Indian IT Act &amp; SEBI guidelines.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

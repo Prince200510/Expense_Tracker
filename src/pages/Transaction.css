@@ -1,0 +1,29 @@
+.history-data{
+    display: flex;
+    flex-wrap: wrap;
+}
+.history-data img{
+    width: 30px;
+    height: 30px;
+}
+.history-data th{
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-left: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgb(0, 0, 0);
+    padding: 10px 5px 2px 5px;
+}
+.history-data th:last-child{
+    border-right: 2px solid rgb(0, 0, 0);
+}
+.history-data td{
+    text-align: center;
+    border-right: 1px solid rgb(130, 130, 130);
+    border-bottom: 1px solid rgb(130, 130, 130);
+    padding: 0px 5px;
+}
+.history-data td:nth-child(3){
+    text-align: left;
+}
+.history-data td:last-child{
+    text-align: left;
+}

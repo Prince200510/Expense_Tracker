@@ -1,0 +1,344 @@
+.expense-body-container{
+    background: linear-gradient(to right, #E8CCD1, #D8BFD8, #F0E6F6);
+    height: 100vh;
+}
+.expense-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+.user-details{
+    background-color: #F5EEF2;
+    border: 3px solid #FFFFFF;
+    padding: 20px;
+    border-radius: 30px;
+    height: 80vh;
+}
+.user-profile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.user-details .user-img{
+    border-radius: 50%;
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #FFFFFF;
+    background-color: #D9D9D9;
+}
+.user-details .user-img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.user-details .user-info{
+    margin-left: 20px;
+    margin-top: 12px;
+}
+.user-details .user-info h2{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #604B89;
+    font-family: 'Inika';
+}
+.user-details .user-info p{
+    color: #C4C4C4;
+    font-size: 14px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+.user-nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav-bar li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #604B89;
+}
+.nav-bar ul{
+    list-style: none;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+.nav-bar ul li{
+    margin-top: 5px;
+}
+
+.expense-details{
+    background-color: #F5EEF2;
+    border: 3px solid #FFFFFF;
+    padding: 20px;
+    border-radius: 30px;
+    height: 80vh;
+}
+.expense-details h2{
+    margin: 0;
+    color: #604B89;
+    font-family: 'Times New Roman', Times, serif;
+}
+.note,
+.expense-details .income-container{
+    display: flex;
+    justify-content: center;
+    background-color: #FAF6F9;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+    inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+.note{
+    justify-content: left;
+}
+.note hr{
+    width: 250px;
+}
+.expense-body-details{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.expense-body-container .add-expense-data{
+    margin-top: 20px;
+}
+.add-expense-data textarea,
+.add-money select,
+.add-money input,
+.expense-body-container .add-expense-data select,
+.expense-body-container .add-expense-data input{
+    background-color: #FAF6F9;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    color: #888787;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.add-expense-data textarea,
+.add-money select,
+.add-money input,
+.expense-body-container .add-expense-data select:focus,
+.expense-body-container .add-expense-data input:focus {
+    outline: none;
+}
+.add-money button,
+.expense-body-container .add-expense-data button{
+    background-color: #5E8922;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 1px solid #5E8922;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.add-expense-data textarea{
+    resize: none;
+    height: 100px;
+    width: 250px;
+}
+.expense-body-container .add-expense-data button:hover{
+    transform: scale(1.1);
+}
+.expense-history{
+    margin-left: 20px;
+    margin-top: 0px;
+}
+.expense-history .expense-data{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FAF6F9;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+    inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.expense-history .expense-icons img{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #FFFFFF;
+}
+.expense-history .expense-title{
+    margin-left: 10px;
+}
+.expense-history .expense-title span{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 10px;
+}
+.expense-history .expense-title h3{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+.expense-history .expense-title h3,
+.expense-history .expense-title p{
+    margin: 0;
+    color: #604B89;
+    font-weight: 600;
+}
+.expense-history .expense-title p,
+.expense-history .expense-title h3{
+    margin-left: 5px;
+    margin-top: -4px;
+}
+.icon{
+    color: black;
+    margin: 0;
+    font-size: 16px;
+}
+.expense-money{
+    display: flex;
+    flex-wrap: wrap;
+}
+.scroll-down{
+    overflow-y: scroll;
+    height: 320px; 
+}
+.scroll-down::-webkit-scrollbar{
+    background-color: red;
+    width: 5px;
+    border-radius: 5px;
+}
+.income-container p{
+    margin: 0;
+    color: #604B89;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.income-container span{
+    margin-left: 8px;
+    color: #5E8922;
+    font-weight: 600;
+}
+.add-money{
+    margin-top: 20px;
+}
+.add-money button{
+    margin-left: 10px;
+}
+.add-money input:nth-child(2){
+    margin-left: 10px;
+}
+.add-money select:nth-child(3){
+    margin-left: 10px;
+}
+.expense-history{
+    display: block;
+}
+.expense-history-phone{
+    display: none;
+}
+@media (max-width: 480px) {
+    *{
+      overflow-x: hidden;
+    }
+    .expense-details{
+        margin: 20px 20px;
+        height: 130vh;
+        overflow: auto;
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+    }
+    .expense-container{
+        margin-top: 20px;
+    }
+    .expense-body-container .add-expense-data button{
+        margin-bottom: 20px;
+    }
+    .user-details{
+        height: 30vh;
+    }
+    .user-img{
+        overflow: auto;
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+    }
+    .user-profile{
+        justify-content: left;
+    }
+    .add-money input:nth-child(2),
+    .add-money select:nth-child(3){
+        margin-left: 0px;
+    }
+    .add-money select:nth-child(3){
+        width: 209px;
+    }
+    .expense-history{
+        display: none;
+    }
+    .expense-history-phone{
+        display: block;
+    }
+    .expense-data-phone{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #FAF6F9;
+        border: 2px solid #FFFFFF;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+        inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+    .user-details{
+        margin: 0px;
+    }
+    .expense-details{
+        padding: 8px;
+        margin: 10px;
+    }
+    .parent-expense-data-phone{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .phone-icon img{
+        width: 40px;
+        height: 40px;
+        object-fit: cover; 
+        object-position: center;
+        border-radius: 50px;
+    }
+    .phone-data p,
+    .phone-data h3{
+        margin: 0;
+        margin-left: 5px;
+    }
+    .phone-data h3{
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+    .phone-data p{
+        font-size: 13px;
+        color: #888787;
+    }
+    .expense-amt-phone{
+        display: flex;
+        text-align: right;
+    }
+    .expense-amt-phone {
+      margin-left: 30px;
+    }
+    .expense-data-desc p{
+        margin: 0;
+        font-size: 11px;
+    }
+    .scroll-down{
+        margin-right: -15px;
+    }
+}
