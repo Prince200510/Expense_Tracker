@@ -55,6 +55,12 @@ const DashboardLayout = ({ children, setIsAuthenticated }) => {
                   <span className="font-body-md text-body-md">Reports</span>
                 </div>
               </Link>
+              <Link to="/expense/savenote" className={`flex items-center justify-between px-space-sm py-space-xs rounded-lg transition-colors ${currentPath.includes('savenote') ? 'bg-primary text-on-primary font-medium' : 'text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface'}`}>
+                <div className="flex items-center gap-space-sm">
+                  <span className="material-symbols-outlined text-[18px]">note</span>
+                  <span className="font-body-md text-body-md">Notes</span>
+                </div>
+              </Link>
             </nav>
           </div>
         </div>
@@ -129,6 +135,10 @@ const DashboardLayout = ({ children, setIsAuthenticated }) => {
                <Link to="/expense/reports" onClick={() => setIsMobileDrawerOpen(false)} className={`flex items-center gap-3 px-4 py-3.5 rounded-xl transition-all ${currentPath.includes('reports') ? 'bg-indigo-50 text-indigo-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`}>
                  <span className="material-symbols-outlined text-[22px]">description</span>
                  <span className="text-[15px]">Reports</span>
+               </Link>
+               <Link to="/expense/savenote" onClick={() => setIsMobileDrawerOpen(false)} className={`flex items-center gap-3 px-4 py-3.5 rounded-xl transition-all ${currentPath.includes('savenote') ? 'bg-indigo-50 text-indigo-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`}>
+                 <span className="material-symbols-outlined text-[22px]">note</span>
+                 <span className="text-[15px]">Notes</span>
                </Link>
              </nav>
           </div>

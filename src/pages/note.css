@@ -1,20 +1,59 @@
-.keep-note{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+/* note.css */
+
+/* Masonry Grid Layout */
+.masonry-grid {
+    column-count: 1;
+    column-gap: 1rem;
+    width: 100%;
 }
-.note .keep-data-note p,
-.note .keep-data-note h3{
-    margin: 0;
-    padding: 0;
+
+@media (min-width: 640px) {
+    .masonry-grid {
+        column-count: 2;
+    }
 }
-.savenote{
-    overflow-y: scroll;
-    height: 320px; 
+
+@media (min-width: 1024px) {
+    .masonry-grid {
+        column-count: 3;
+    }
 }
-.savenote::-webkit-scrollbar{
-    background-color: red;
-    width: 5px;
-    border-radius: 5px;
-    margin-left: 20px;
+
+@media (min-width: 1280px) {
+    .masonry-grid {
+        column-count: 4;
+    }
+}
+
+.masonry-item {
+    break-inside: avoid;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem; /* Adjust space between items */
+}
+
+/* Custom Scrollbar for Textareas (Modal mainly) */
+textarea::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Ensure placeholder colors match the Keep aesthetic */
+textarea::placeholder, input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* Fade out for long notes */
+.masonry-item .max-h-\[350px\] {
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
